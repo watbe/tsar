@@ -23,6 +23,15 @@
 // elements such as forms, tables, tabs etc.
 //
 
+$serif: "ff-meta-serif-web-pro", georgia, serif;
+$sans-serif: "futura-pt", Arial, sans-serif;
+$monospace: "source-code-pro", Consolas, monospace; 
+
+$c-body: #333;
+$c-subtext: #999;
+
+$l-text: 960px;
+
 $page:         #fff;    // to match the page background, default is white
 $border:       #ccc;    // all borders set in global.styles - tables, fieldset, primary links
 $highlight:    #c00;    // required mark, form error highlight, "new" label on comments

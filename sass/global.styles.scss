@@ -26,6 +26,7 @@
  * helper classes and base styles.
  */
 
+
 /* =============================================================================
  *   Base
  * ========================================================================== */
@@ -43,16 +44,96 @@ html {
 }
 
 body {
-  font-family: $sans-serif-small; // Set from _custom.scss font variables
+  font-family: $serif; // Set from _custom.scss font variables
   font-size: 87.5%;
 }
 
 
 /* =============================================================================
+ *   Links
+ * ========================================================================== */
+
+#columns a {
+  text-decoration:none;
+  border-bottom: 1px dotted;
+  &:hover {
+    border-bottom:1px solid;
+    color:#000;
+  }
+  color: $c-body;
+}
+
+
+#primary-menu-bar {
+  font-family: $sans-serif;
+  font-weight: 100;
+  font-size: 1.7em;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: #000;
+    }
+    color: $c-body;
+  }
+  margin-top: 0;
+  padding-top: 10px;
+  background-color: $light;
+}
+
+body {
+  #columns {
+    max-width: $l-text;
+    margin: 0 auto;
+  }  
+}
+
+.front h1#page-title {
+  display:none;
+}
+
+.node-content {
+  font-size: 1.3em;
+  color: $c-body;
+}
+
+div.geshifilter {
+  .ln {
+    padding-right: 11px !important;
+  }
+  pre, span, li {
+    font-family: $monospace !important;
+  }
+  &>div {
+    min-width: 650px;
+  }
+  ol {
+    padding: 0 0 0 3em;
+  }
+  .li2 {
+    font-style: normal !important;
+  }
+}
+
+nav.primary-menu-wrapper {
+  ul.menu {
+    display: inline-block;
+  }
+  margin: 0 auto;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+footer.submitted {
+  color: $c-subtext;
+}
+/* =============================================================================
  *   HTML Elements
  * ========================================================================== */
 
-h1 {}
+h1 {
+  font-size: 3em;
+}
 
 
 h2 {}
@@ -505,27 +586,6 @@ ul.links {
  * Footer region
  */
 .region-footer {}
-
-
-/* =============================================================================
- *   Links
- * ========================================================================== */
-
-a {
-  text-decoration: none;
-
-  &:link,
-  &:visited {}
-
-  &:active,
-  &.active {}
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-}
-
 
 /* =============================================================================
  *   Primary, Secondary and Menu Bar region menus
